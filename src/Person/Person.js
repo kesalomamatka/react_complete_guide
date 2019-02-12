@@ -6,6 +6,7 @@ const person = (props) =>{
         <div>
             <p onClick={props.click}>im {props.name} and im {props.age}</p>
             <p>{props.children}</p>
+            <input type="text" onChange={props.changed} value={props.name}/>
         </div>
     );
     //return <p>im a person and im {Math.floor(Math.random()*30)} </p>
