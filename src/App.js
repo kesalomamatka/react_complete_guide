@@ -21,7 +21,7 @@ class App extends Component {
     }
 
     nameChangeHandler = (event, id) => {
-        const person= this.state.persons.find();
+        const person= this.state.persons.find();asdfasdf
 
         this.setState({
             persons: [
