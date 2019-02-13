@@ -21,7 +21,7 @@ class App extends Component {
     }
 
     nameChangeHandler = (event, id) => {
-        const person= this.state.persons
+        const person= this.state.persons.find();
 
         this.setState({
             persons: [
@@ -61,7 +61,6 @@ class App extends Component {
                           age ={person.age}
                           key = {person.id}
                           change={(event)=> this.nameChangeHandler(event, person.id)}
-
                       />
                     })}
                 </div>
