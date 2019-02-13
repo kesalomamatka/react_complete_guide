@@ -61,6 +61,7 @@ class App extends Component {
                           age ={person.age}
                           key = {person.id}
                           change={(event)=> this.nameChangeHandler(event, person.id)}
+
                       />
                     })}
                 </div>
