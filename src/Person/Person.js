@@ -1,4 +1,37 @@
-import React from 'react'
+import React from 'react';
+
+const person = () =>{
+    return <p>Im a person</p>
+};
+export default person;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React from 'react'
 import './Person.css'
 
 const person = (props) =>{
@@ -13,4 +46,4 @@ const person = (props) =>{
     //return <p>im a person and im {Math.floor(Math.random()*30)} </p>
 };
 
-export default person;
+export default person;*/
