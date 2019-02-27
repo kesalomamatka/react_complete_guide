@@ -11,7 +11,7 @@ class App extends Component {
             ]
     }
 
-    //this refer to our class.
+    //this refer to our class...
     render() {
 
         return (
