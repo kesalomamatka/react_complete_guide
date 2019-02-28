@@ -7,3 +7,12 @@
     text-align: center;
 
 }
+
+ input[type=text] {
+     width: 100px;
+     -webkit-transition: width .35s ease-in-out;
+     transition: width .35s ease-in-out;
+ }
+input[type=text]:focus {
+    width: 250px;
+}
