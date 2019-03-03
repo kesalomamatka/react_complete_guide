@@ -41,7 +41,7 @@ class App extends Component {
     }
 
     //       onClick={() => this.switchNameHandler('Maximilian!!')}>Show Persons</button>
-
+    // variable hold jsx
     render () {
 
         const style = {
@@ -52,6 +52,27 @@ class App extends Component {
             cursor: 'pointer'
         };
 
+        let person = null;
+
+        if(this.state.showPersons){
+            person = (
+
+                <div>
+                    <Person
+                        name={this.state.persons[0].name}
+                        age={this.state.persons[0].age} />
+                    <Person
+                        name={this.state.persons[1].name}
+                        age={this.state.persons[1].age}
+                        click={this.switchNameHandler.bind(this, 'Max!')}
+                        changed={this.nameChangedHandler} >My Hobbies: Racing</Person>
+                    <Person
+                        name={this.state.persons[2].name}
+                        age={this.state.persons[2].age} />
+                </div>
+            );
+        }
+
         return (
             <div className="App">
                 <h1>Hi, I'm a React App</h1>
@@ -60,22 +81,8 @@ class App extends Component {
                     style={style}
                     onClick={this.togglePersonsHandler}>Show Persons</button>
 
-                {
-                    this.state.showPersons === true ?
-                    <div>
-                        <Person
-                            name={this.state.persons[0].name}
-                            age={this.state.persons[0].age} />
-                        <Person
-                            name={this.state.persons[1].name}
-                            age={this.state.persons[1].age}
-                            click={this.switchNameHandler.bind(this, 'Max!')}
-                            changed={this.nameChangedHandler} >My Hobbies: Racing</Person>
-                        <Person
-                            name={this.state.persons[2].name}
-                            age={this.state.persons[2].age} />
-                    </div> : null
-                }
+                    {person}
+
             </div>
         );
         // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
