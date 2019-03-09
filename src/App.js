@@ -40,8 +40,9 @@ class App extends Component {
         this.setState({showPersons: !doesShowPersons});
     }
 
-    //       onClick={() => this.switchNameHandler('Maximilian!!')}>Show Persons</button>
-    // variable hold jsx
+    //onClick={() => this.switchNameHandler('Maximilian!!')}>Show Persons</button>
+    //Variable hold jsx
+
     render () {
 
         const style = {
