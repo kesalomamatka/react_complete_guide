@@ -24,24 +24,6 @@ export default person;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*import React from 'react'
 import './Person.css'
 
