@@ -5,6 +5,7 @@
   "homepage": "https://kesalomamatka.github.io/react_complete_guide",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "radium": "^0.25.1",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-scripts": "2.1.3"
