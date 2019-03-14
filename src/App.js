@@ -118,6 +118,7 @@ class App extends Component {
         //let classes = ['red','bold'].join(' ');
 
         return (
+            <StyleRoot>
                 <div className="App">
                     <h1>Hi, I'm a React App</h1>
                     <p className={classes.join(' ')}>This is really working!</p>
