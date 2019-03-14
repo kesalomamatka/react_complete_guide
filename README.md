@@ -9,7 +9,8 @@ https://kesalomamatka.github.io/react_complete_guide/
 
 Usage:
 ### `npm install --save radium`
-Using radium
+
+Radium is a popular package for react which allows us to use inline styles with pseudo selectors and media queries.
 https://www.npmjs.com/package/radium
 
 ### `npm start`
