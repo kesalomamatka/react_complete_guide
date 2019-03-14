@@ -1,13 +1,17 @@
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository is used in react complete guide course and to store the exercises solution
 
-gh-page
+### `gh-page`
 
 https://kesalomamatka.github.io/react_complete_guide/
 
 ## Available Scripts
 
 Usage:
+### `npm install --save radium`
+
+Radium is a popular package for react which allows us to use inline styles with pseudo selectors and media queries.
+https://www.npmjs.com/package/radium
 
 ### `npm start`
 
