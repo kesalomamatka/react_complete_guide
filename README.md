@@ -8,6 +8,9 @@ https://kesalomamatka.github.io/react_complete_guide/
 ## Available Scripts
 
 Usage:
+### `npm install radium`
+
+https://www.npmjs.com/package/radium
 
 ### `npm start`
 
