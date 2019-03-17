@@ -80,3 +80,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### Branch
 
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+### CSS modules
+
+https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet
