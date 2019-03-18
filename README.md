@@ -84,8 +84,21 @@ https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-man
 
 https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet
 
+webpack.config.js file
+
+{
+  test: cssRegex,
+  exclude: cssModuleRegex,
+  use: getStyleLoaders({
+      importLoaders: 1,
+      modules: true,
+      localIdentName: '[name]__[local]__[hash:base64:5]'
+  }),
+}
+
 ### npm run eject
 
 To eject the configuration
 
 commit before eject --> git commit -am "Save before ejecting"
+
