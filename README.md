@@ -85,9 +85,7 @@ https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-man
 https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet
 
 ### npm run eject
-<<<<<<< HEAD
-To eject the configuration
-=======
 
 To eject the configuration
->>>>>>> 46c7d6a2295a053d98adc247bf024fbe925f1301
+
+commit before eject --> git commit -am "Save before ejecting"
