@@ -83,3 +83,6 @@ https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-man
 ### CSS modules
 
 https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet
+
+### npm run eject
+To eject the configuration
