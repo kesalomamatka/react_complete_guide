@@ -102,9 +102,9 @@ To eject the configuration
 
 commit before eject --> git commit -am "Save before ejecting"
 
-###Error Boundaries
+### Error Boundaries
 https://reactjs.org/docs/error-boundaries.html
 
-###Chrome Devtool Debugging
+### Chrome Devtool Debugging
 https://developers.google.com/web/tools/chrome-devtools/javascript/
 
