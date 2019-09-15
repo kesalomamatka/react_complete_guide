@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Person from './Person/Person';
+import Person from '../components/Persons/Person/Person';
 //functional based
 //class App extends Component {
 const app = props =>{

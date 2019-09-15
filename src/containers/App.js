@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './Person/Person';
+import Person from '../components/Persons/Person/Person';
 
 class App extends Component {
     state = {
@@ -41,9 +41,6 @@ class App extends Component {
             persons:persons
         });
 
-
-
-
         /*
         this.setState( {
             persons: [
@@ -70,7 +67,6 @@ class App extends Component {
     //Variable hold jsx
 
     render () {
-
         const style = {
             backgroundColor: 'Green',
             color: 'White',
@@ -84,7 +80,6 @@ class App extends Component {
 
         if(this.state.showPersons){
             person = (
-
                 <div>
                     {this.state.persons.map((person,index) => {
                         return <Person
@@ -110,18 +105,14 @@ class App extends Component {
         //let classes = ['red','bold'].join(' ');
 
         return (
-
                 <div className="App">
                     <h1>Hi, I'm a React App</h1>
                     <p className={classes.join(' ')}>This is really working!</p>
                     <button
                         style={style}
                         onClick={this.togglePersonsHandler}>Show Persons</button>
-
                         {person}
-
                 </div>
-
         );
     }
 }
