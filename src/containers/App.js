@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD:src/containers/App.js
 import './App.css';
 import Person from '../components/Persons/Person/Person';
+=======
+import classes from './App.css';
+import Person from './Person/Person';
+>>>>>>> 6d75ec76bd0fd27efb81fbab793975c2d924eb1f:src/App.js
 
 class App extends Component {
     state = {
@@ -67,6 +72,7 @@ class App extends Component {
     //Variable hold jsx
 
     render () {
+<<<<<<< HEAD:src/containers/App.js
         const style = {
             backgroundColor: 'Green',
             color: 'White',
@@ -75,8 +81,13 @@ class App extends Component {
             padding: '8px',
             cursor: 'pointer'
         };
+=======
+
+>>>>>>> 6d75ec76bd0fd27efb81fbab793975c2d924eb1f:src/App.js
 
         let person = null;
+
+        let btnClass = "";
 
         if(this.state.showPersons){
             person = (
@@ -92,24 +103,29 @@ class App extends Component {
 
                 </div>
             );
-            style.backgroundColor="red";
+            btnClass = classes.Red;
 
         }
-        const classes = [];
+        const assignedClasses = [];
         if(this.state.persons.length<=2){
-            classes.push('red');
+            assignedClasses.push(classes.red);
         }
         if(this.state.persons.length<=1){
-            classes.push('bold');
+            assignedClasses.push(classes.bold );
         }
         //let classes = ['red','bold'].join(' ');
 
         return (
+<<<<<<< HEAD:src/containers/App.js
                 <div className="App">
+=======
+
+                <div className={classes.App}>
+>>>>>>> 6d75ec76bd0fd27efb81fbab793975c2d924eb1f:src/App.js
                     <h1>Hi, I'm a React App</h1>
-                    <p className={classes.join(' ')}>This is really working!</p>
+                    <p className={assignedClasses.join(' ')}>This is really working!</p>
                     <button
-                        style={style}
+                        className={btnClass}
                         onClick={this.togglePersonsHandler}>Show Persons</button>
                         {person}
                 </div>

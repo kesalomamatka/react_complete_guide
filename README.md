@@ -9,11 +9,11 @@ https://kesalomamatka.github.io/react_complete_guide/
 
 Usage:
 ### `npm install --save radium`
-
+ 
 Radium is a popular package for react which allows us to use inline styles with pseudo selectors and media queries.
 https://www.npmjs.com/package/radium
 
-### `npm start`
+### `npm start` 
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -76,11 +76,37 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-
 ### Branch
 
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 
 ### CSS modules
-
+ 
 https://facebook.github.io/create-react-app/docs/adding-a-css-modules-stylesheet
+
+webpack.config.js file
+
+{
+  test: cssRegex,
+  exclude: cssModuleRegex,
+  use: getStyleLoaders({
+      importLoaders: 1,
+      modules: true,
+      localIdentName: '[name]__[local]__[hash:base64:5]'
+  }),
+}
+
+### npm run eject
+
+To eject the configuration
+
+commit before eject --> git commit -am "Save before ejecting"
+
+### Error Boundaries
+https://reactjs.org/docs/error-boundaries.html
+
+### Chrome Devtool Debugging
+https://developers.google.com/web/tools/chrome-devtools/javascript/
+
+
+today is another green day   

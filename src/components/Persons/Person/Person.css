@@ -10,6 +10,14 @@
 p:hover{
     background-color: antiquewhite;
 }
+
+@media (min-width:500px){
+    .Person{
+        width: 450px;
+    }
+}
+
+
  input[type=text] {
      width: 100px;
      -webkit-transition: width .35s ease-in-out;
