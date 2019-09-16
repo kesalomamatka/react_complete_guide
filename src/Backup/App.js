@@ -27,7 +27,7 @@ const app = props =>{
     //this refer to our class
    // render() {
         return (
-            <div className="App">
+            <div className="Cockpit">
                 <h1>He</h1>
                 <button onClick={switchNameHandler}>Switch name</button>
                 <p>H</p>
