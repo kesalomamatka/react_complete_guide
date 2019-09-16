@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD:src/containers/App.js
 import './App.css';
 import Person from '../components/Persons/Person/Person';
-=======
 import classes from './App.css';
-import Person from './Person/Person';
->>>>>>> 6d75ec76bd0fd27efb81fbab793975c2d924eb1f:src/App.js
 
 class App extends Component {
     state = {
@@ -72,7 +68,6 @@ class App extends Component {
     //Variable hold jsx
 
     render () {
-<<<<<<< HEAD:src/containers/App.js
         const style = {
             backgroundColor: 'Green',
             color: 'White',
@@ -81,9 +76,7 @@ class App extends Component {
             padding: '8px',
             cursor: 'pointer'
         };
-=======
 
->>>>>>> 6d75ec76bd0fd27efb81fbab793975c2d924eb1f:src/App.js
 
         let person = null;
 
@@ -116,12 +109,9 @@ class App extends Component {
         //let classes = ['red','bold'].join(' ');
 
         return (
-<<<<<<< HEAD:src/containers/App.js
                 <div className="App">
-=======
 
                 <div className={classes.App}>
->>>>>>> 6d75ec76bd0fd27efb81fbab793975c2d924eb1f:src/App.js
                     <h1>Hi, I'm a React App</h1>
                     <p className={assignedClasses.join(' ')}>This is really working!</p>
                     <button
@@ -129,27 +119,27 @@ class App extends Component {
                         onClick={this.togglePersonsHandler}>Show Persons</button>
                         {person}
                 </div>
+                </div>
         );
     }
 }
-
 export default App;
+                    {/**/}
+  {/*higher order component*/}
 
-                //higher order component
+ {/*return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));*/}
 
-                // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
-
-
-
-/*
-<Person
-    name={this.state.persons[0].name}
-    age={this.state.persons[0].age} />
-<Person
-name={this.state.persons[1].name}
-age={this.state.persons[1].age}
-click={this.switchNameHandler.bind(this, 'Max!')}
-changed={this.nameChangedHandler} >My Hobbies: Racing</Person>
-<Person
-    name={this.state.persons[2].name}
-    age={this.state.persons[2].age} />*/
+//
+//
+// /*
+// <Person
+//     name={this.state.persons[0].name}
+//     age={this.state.persons[0].age} />
+// <Person
+// name={this.state.persons[1].name}
+// age={this.state.persons[1].age}
+// click={this.switchNameHandler.bind(this, 'Max!')}
+// changed={this.nameChangedHandler} >My Hobbies: Racing</Person>
+// <Person
+//     name={this.state.persons[2].name}
+//     age={this.state.persons[2].age} />*/
