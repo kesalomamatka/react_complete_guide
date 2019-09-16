@@ -5,6 +5,12 @@ import Cockpit from "../components/Cockpit/Cockpit"
 
 
 class App extends Component {
+    constructor(props){
+        super(props);
+        console.log("[app.js] constructor");
+        //this.state = {}
+    }
+
     state = {
         persons: [
             { id:'1',name: 'Max', age: 28 },
@@ -15,17 +21,19 @@ class App extends Component {
         showPersons: false
     }
 
-    switchNameHandler = (newName) => {
-        // console.log('Was clicked!');
-        // DON'T DO THIS: this.state.persons[0].name = 'Maximilian';
-        this.setState( {
-            persons: [
-                {id:'1', name: newName, age: 28 },
-                {id:'2', name: 'Manu', age: 29 },
-                {id:'3', name: 'Stephanie', age: 27 }
-            ]
-        } )
+    static getDerivedStateFromProps(props, state){
+        console.log("[app.js] getDerivedStateFromProps",props);
+        return state;
     }
+
+    // componentWillMount(){
+    //     console.log("[App.js] componentWillMount");
+    // }
+
+    componentDidMount() {
+        console.log("[app.js] componentDidMount");
+    }
+
 
     nameChangedHandler = (event, id) => {
         const personIndex = this.state.persons.findIndex(p => {
@@ -69,18 +77,9 @@ class App extends Component {
     //Variable hold jsx
 
     render () {
-        const style = {
-            backgroundColor: 'Green',
-            color: 'White',
-            font: 'inherit',
-            border: '1px solid blue',
-            padding: '8px',
-            cursor: 'pointer'
-        };
-
+        console.log("[app.js] render");
 
         let person = null;
-
 
         if(this.state.showPersons){
             person = <Persons
